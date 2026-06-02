@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git diff:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git remote show:*)",
+      "Bash(mkdir *)",
+      "Bash(npm install *)",
+      "mcp__github__get_file_contents",
+      "mcp__github__get_me",
+      "mcp__github__search_repositories",
+      "mcp__github__list_issues",
+      "mcp__github__issue_read",
+      "WebFetch(domain:github.com)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'File changed: $CLAUDE_TOOL_INPUT_FILE_PATH'"
+          }
+        ]
+      }
+    ]
+  }
+}
