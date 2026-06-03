@@ -1,6 +1,6 @@
 ---
 name: karpathy-guidelines
-description: Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.
+description: Karpathy's LLM coding guidelines: think before coding, simplicity first, surgical changes, goal-driven execution. Use when writing, reviewing, or refactoring code to avoid overcomplication.
 license: MIT
 ---
 
